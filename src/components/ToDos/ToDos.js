@@ -32,7 +32,7 @@ export default class ToDos extends Component {
     componentDidMount() {
         this.cancelTokenSource = Axios.CancelToken.source();
 
-        Axios.get("http://localhost:3001/todoDB/", {
+        Axios.get("https://todolist-backend-mern-crud.herokuapp.com/todoDB/", {
             cancelToken: this.cancelTokenSource.token
         })
             .then(response => {
@@ -46,7 +46,7 @@ export default class ToDos extends Component {
     componentDidUpdate() {
         this.cancelTokenSource = Axios.CancelToken.source();
 
-        Axios.get("http://localhost:3001/todoDB/", {
+        Axios.get("https://todolist-backend-mern-crud.herokuapp.com/todoDB/", {
             cancelToken: this.cancelTokenSource.token
         })
             .then(response => {

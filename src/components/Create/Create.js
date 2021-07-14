@@ -48,7 +48,7 @@ export default class Create extends Component {
             todo_completed: this.state.todo_completed
         }
 
-        Axios.post("http://localhost:3001/todoDB/add", newTodo)
+        Axios.post("https://todolist-backend-mern-crud.herokuapp.com/todoDB/add", newTodo)
             .then(response => console.log(response.data))
 
         this.setState({
