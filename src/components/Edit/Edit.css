@@ -1,0 +1,35 @@
+.EditListContainer {
+    margin-top: 20px;
+}
+
+.EditListContainer .formInputTags {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #cfcfcf;
+    padding: 6px;
+    margin-top: 5px;
+    outline-color: #00D07D;
+}
+
+.EditListContainer .priorityList {
+    margin-top: 20px;
+}
+
+.ToDoSubmitButton .DeleteButton {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 30px 9px 30px;
+    margin-left: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    background-image: linear-gradient(to right, #ef233c, #f94d5f, #ef233c);
+    background-size: 200%;
+    color: #0F0E17;
+    transition: all 0.5s;
+}
+
+.ToDoSubmitButton .DeleteButton:hover {
+    background-position: right;
+}

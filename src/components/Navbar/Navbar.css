@@ -1,0 +1,25 @@
+.NavLinkTag {
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+    margin: 12px 20px 10px 30px;
+}
+
+.NavLinkTag:hover {
+    color: black;
+    /* text-shadow: 1px 1px 0 black; */
+}
+
+.navbar .Page_Brand {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.navbar .Page_Brand:hover {
+    color: #f0452f;
+}

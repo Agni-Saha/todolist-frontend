@@ -1,0 +1,11 @@
+.todoEditLink{
+    color: #ef233c;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    margin-left: 10px;
+}
+
+.todoEditLink:hover {
+    color: #00D07D;
+}

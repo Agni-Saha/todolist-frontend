@@ -1,0 +1,37 @@
+.ToDoContainer {
+    margin-top: 20px;
+}
+
+.ToDoContainer .formInputTags {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #cfcfcf;
+    padding: 6px;
+    margin-top: 5px;
+    outline-color: #00D07D;
+}
+
+.priorityList {
+    margin-top: 20px;
+}
+
+.ToDoSubmitButton {
+    margin-top: 25px;
+}
+
+.ToDoSubmitButton .SubmitButton {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 30px 9px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #32be8f, #3fecb3, #32be8f);
+    background-size: 200%;
+    color: #0F0E17;
+    transition: all 0.5s;
+}
+
+.ToDoSubmitButton .SubmitButton:hover {
+    background-position: right;
+}
