@@ -69,10 +69,9 @@ export default class Edit extends Component {
         Axios.post("https://todolist-backend-mern-crud.herokuapp.com/todoDB/update/" + this.props.match.params.id, obj)
             .then(response => {
                 console.log(response.data)
+                this.props.history.push('/')
             })
             .catch(error => console.log(error))
-
-        this.props.history.push("/")
     }
 
     onDelete(event) {
@@ -81,18 +80,17 @@ export default class Edit extends Component {
         Axios.delete("https://todolist-backend-mern-crud.herokuapp.com/todoDB/delete/" + this.props.match.params.id)
             .then(response => {
                 console.log(response.data)
+                this.props.history.push('/')
             })
             .catch(error => console.log(error))
-
-        this.props.history.push("/")
     }
 
     render() {
         return (
             <div className="EditListContainer">
-                <h3>Update Todo</h3>
+                <h3 className="EditTodoHeader">Update Todo</h3>
                 <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
+                    <div className="form-group InputField">
                         <label htmlFor="todoDescription">Description</label>
                         <input type="text" className="formInputTags"
                             id="todoDescription"
@@ -100,7 +98,7 @@ export default class Edit extends Component {
                             onChange={this.onChangeToDoDescription}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group InputField">
                         <label htmlFor="todoResponsible">Responsible</label>
                         <input type="text" className="formInputTags"
                             id="todoResponsible"

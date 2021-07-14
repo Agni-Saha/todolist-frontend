@@ -1,11 +1,25 @@
+.TodosHeader {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
 .todoEditLink{
+    font-family: 'Josefin Sans', sans-serif;
     color: #ef233c;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.2s;
-    margin-left: 10px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .todoEditLink:hover {
     color: #00D07D;
+    text-decoration: underline;
+}
+
+.tableHeader {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
 }

@@ -43,20 +43,6 @@ export default class ToDos extends Component {
             .catch(error => console.log(error))
     }
 
-    componentDidUpdate() {
-        this.cancelTokenSource = Axios.CancelToken.source();
-
-        Axios.get("https://todolist-backend-mern-crud.herokuapp.com/todoDB/", {
-            cancelToken: this.cancelTokenSource.token
-        })
-            .then(response => {
-                this.setState({
-                    todos: response.data
-                })
-            })
-            .catch(error => console.log(error))
-    }
-
     todoListBody() {
         return this.state.todos.map((item, index) => {
             return (
@@ -68,14 +54,14 @@ export default class ToDos extends Component {
     render() {
         return (
             <div className="TodosListContainer">
-                <h3 className="mt-3">Todos List</h3>
+                <h3 className="TodosHeader">Todos List</h3>
                 <table className="table table-striped mt-3">
                     <thead>
                         <tr>
-                            <th>Description</th>
-                            <th>Responsible</th>
-                            <th>Priority</th>
-                            <th>Actions</th>
+                            <th className="tableHeader">Description</th>
+                            <th className="tableHeader">Responsible</th>
+                            <th className="tableHeader">Priority</th>
+                            <th className="tableHeader">Actions</th>
                         </tr>
                     </thead>
                     <tbody>

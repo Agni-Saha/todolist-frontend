@@ -2,6 +2,26 @@
     margin-top: 20px;
 }
 
+.EditListContainer .EditTodoHeader {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.EditListContainer label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.EditListContainer .InputField label {
+    margin-bottom: 2px;
+}
+
+.EditListContainer .InputField {
+    margin-bottom: 15px;
+}
+
 .EditListContainer .formInputTags {
     display: block;
     width: 100%;
@@ -23,7 +43,6 @@
     margin-left: 25px;
     font-size: 1.2rem;
     font-weight: 500;
-
     background-image: linear-gradient(to right, #ef233c, #f94d5f, #ef233c);
     background-size: 200%;
     color: #0F0E17;

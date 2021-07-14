@@ -62,9 +62,9 @@ export default class Create extends Component {
     render() {
         return (
             <div className="ToDoContainer">
-                <h3>Create New To-Do</h3>
+                <h3 className="CreateTodoHeader">Create New To-Do</h3>
                 <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
+                    <div className="form-group InputField">
                         <label htmlFor="todoDescription">Description</label>
                         <input type="text" className="formInputTags"
                             id="todoDescription"
@@ -72,7 +72,7 @@ export default class Create extends Component {
                             onChange={this.onChangeToDoDescription}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group InputField">
                         <label htmlFor="todoResponsible">Responsible</label>
                         <input type="text" className="formInputTags"
                             id="todoResponsible"

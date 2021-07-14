@@ -1,22 +1,31 @@
+.navbar {
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .NavLinkTag {
     display: flex;
     flex-direction: row-reverse;
     text-decoration: none;
     color: rgb(85, 85, 85);
     font-weight: 500;
+    font-size: 1.1rem;
     margin: 12px 20px 10px 30px;
 }
 
 .NavLinkTag:hover {
     color: black;
-    /* text-shadow: 1px 1px 0 black; */
+    text-shadow: 0.5px 1px 0 black;
+    /* text-decoration: underline; */
+    /* transform: translateY(-2px); */
 }
 
 .navbar .Page_Brand {
     text-decoration: none;
     color: black;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    text-shadow: 0.5px 1px 0;
+    /* font-weight: 600; */
     transition: all 0.3s;
 }
 
