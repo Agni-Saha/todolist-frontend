@@ -20,7 +20,7 @@ export default class Edit extends Component {
     }
 
     componentDidMount() {
-        Axios.get("https://todolist-backend-mern-crud.herokuapp.com/" + this.props.match.params.id)
+        Axios.get("https://todolist-backend-mern-crud.herokuapp.com/todoDB/" + this.props.match.params.id)
             .then(response => {
                 this.setState({
                     todo_description: response.data.todo_description,
@@ -66,7 +66,7 @@ export default class Edit extends Component {
             todo_priority: this.state.todo_priority,
             todo_completed: this.state.todo_completed
         }
-        Axios.post("https://todolist-backend-mern-crud.herokuapp.com/update/" + this.props.match.params.id, obj)
+        Axios.post("https://todolist-backend-mern-crud.herokuapp.com/todoDB/update/" + this.props.match.params.id, obj)
             .then(response => {
                 console.log(response.data)
             })
@@ -78,7 +78,7 @@ export default class Edit extends Component {
     onDelete(event) {
         event.preventDefault()
 
-        Axios.delete("https://todolist-backend-mern-crud.herokuapp.com/delete/" + this.props.match.params.id)
+        Axios.delete("https://todolist-backend-mern-crud.herokuapp.com/todoDB/delete/" + this.props.match.params.id)
             .then(response => {
                 console.log(response.data)
             })
